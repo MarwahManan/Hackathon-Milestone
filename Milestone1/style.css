@@ -2,7 +2,7 @@ body {
     font-family: 'Arial', sans-serif;
     background-color:beige;
     margin: 0;
-    padding: 130px;
+    padding: 20px;
 }
 
 .resume-container {
@@ -12,6 +12,7 @@ body {
     margin: 0 auto;
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.139);
+    box-sizing:border-box;
 }
 
 /* Left Section Styling */
@@ -21,21 +22,23 @@ body {
     padding: 20px;
     width: 35%;
     text-align: center;
-    border-right: 5px solid #39bee6e7;
+    border-right: 6px solid #39bee6e7;
+    box-sizing:border-box;
 }
 
 .profile-picture {
-    width: 153px;
+    width: 150px;
     height: 150px;
-    margin-top: 50%;
-    border-radius: 70%;
-    margin-bottom: 50px;
+    margin-top: 10%;
+    border-radius: 50%;
+    border:6px solid #39d2e6e7;
+    margin-bottom: 20px;
 }
 
 h1 {
-    font-size: 30px;
-    margin: 10px 0;
-    margin-bottom: 30px;
+    font-size: 40px;
+    margin: 15px 0;
+    margin-bottom: 35px;
     text-align: center;
 }
 
@@ -44,7 +47,7 @@ h3 {
     padding: 2%;
     margin: 20px 0 10px;
     color: black;
-    border-radius: 10px;
+    border-radius: 20px;
     box-shadow: 0 0 15px #39d2e6;
     margin-top: 5%;
     margin-bottom: 5%;
@@ -57,13 +60,14 @@ ul {
 }
 
 ul li {
-    margin: 5px 0;
+    margin: 10px 25px;
 }
 
 /* Right Section Styling */
 .right-section {
     padding: 20px;
     width: 65%;
+    box-sizing:border-box;
 }
 
 button {
