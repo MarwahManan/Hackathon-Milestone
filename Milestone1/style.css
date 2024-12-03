@@ -1,84 +1,110 @@
-body {
-    font-family: 'Arial', sans-serif;
-    background-color:beige;
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: azure;
     margin: 0;
-    padding: 150px;
+    padding: 20px;
+
 }
 
-.resume-container {
+.resume-container{
     display: flex;
-    background-color: white;
+    background-color: rgba(12 , 15, 31 , 0.1);
     width: 80%;
     margin: 0 auto;
-    border-radius: 10px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-    box-sizing:border-box;
+    border-radius: 20px;
+    box-shadow: 0 0 20px black;
+    box-sizing: border-box;
 }
 
-/* Left Section Styling */
-.left-section {
-    background-color: #2c2c2c;
-    color: white;
-    padding: 20px;
+.section-1{
+    background-color: darkslategray;
+    color:lightgrey;
+    padding: 30px;
     width: 35%;
     text-align: center;
-    border-right: 5px solid #e63946;
-    box-sizing:border-box;
+    border-right: 6px solid lightseagreen;
+    box-sizing: border-box;
 }
 
-.profile-picture {
-    width: 150px;
-    height: 150px;
+.profile{
+    width: 65%;
+    height: 35%;
     margin-top: 10%;
-    border-radius: 50%;
-    border: 5px solid #39d2e6e7;
     margin-bottom: 20px;
+    border-radius: 50%;
+    border: 6px solid lightseagreen;
 }
 
-h1 {
-    font-size: 24px;
-    margin: 10px 0;
-    margin-bottom: 30px;
+
+h1{
+    font-size: 40px;
+    margin: 15px 0;
+    margin-bottom: 35px;
     text-align: center;
+    color: darkslateblue;
 }
 
-h3 {
-    font-size: 18px;
+h3{
+    font-size: 20px;
     padding: 2%;
     margin: 20px 0 10px;
     color: black;
-    border-radius: 10px;
-    box-shadow: 0 0 15px #e63946;
+    border-radius: 20px;
+    box-shadow: 0 0 15px rgb(72, 47, 107);
     margin-top: 5%;
     margin-bottom: 5%;
+    border-bottom: 5px solid gainsboro;
 }
 
-ul {
-    list-style-type: fill round;
-    padding: 10;
+ul{
+    list-style-type: square;
+    padding: 0;
     margin: 10px 0;
 }
 
-ul li {
-    margin: 5px 0;
+ul li{
+    margin: 10px 25px;
 }
 
-/* Right Section Styling */
-.right-section {
-    padding: 20px;
-    width: 65%;
-    box-sizing:border-box;
+.section-2{
+width: 60%;
+padding: 30px;
+box-sizing: border-box;
 }
 
-button {
-    font-family: Arial, sans-serif;
-    border-radius: 10px;
-    box-shadow: 0 0 15px black;
+p{
+    font-size: 22px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+button{
+    font-family:'Open Sans', 'Helvetica Neue', sans-serif;
+    border-radius: 20px;
+    box-shadow: 0 0 15px blue;
     cursor: pointer;
     margin-top: 10px;
-    font-size: 18px;
+    font-size: 20px;
 }
 
-button:hover {
-    background-color: #73e3ff;
+button:hover{
+    background-color: blue;
+    color: lightseagreen;
+}
+
+/* Responsive Adjustments*/
+@media screen and (max-width: 768px){
+    .resume-container{
+        flex-direction: column;
+    }
+
+    .section-1{
+        width: 100%;
+        border-right: none;
+        
+    }
+
+    .section-2{
+       width: 100%;
+       
+    }
 }
