@@ -1,110 +1,287 @@
-body{
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: azure;
-    margin: 0;
-    padding: 20px;
-
-}
-
-.resume-container{
+body {
+    background: lightblue;
     display: flex;
-    background-color: rgba(12 , 15, 31 , 0.1);
-    width: 80%;
-    margin: 0 auto;
-    border-radius: 20px;
-    box-shadow: 0 0 20px black;
-    box-sizing: border-box;
-}
-
-.section-1{
-    background-color: darkslategray;
-    color:lightgrey;
-    padding: 30px;
-    width: 35%;
-    text-align: center;
-    border-right: 6px solid lightseagreen;
-    box-sizing: border-box;
-}
-
-.profile{
-    width: 65%;
-    height: 35%;
-    margin-top: 10%;
-    margin-bottom: 20px;
-    border-radius: 50%;
-    border: 6px solid lightseagreen;
-}
-
-
-h1{
-    font-size: 40px;
-    margin: 15px 0;
-    margin-bottom: 35px;
-    text-align: center;
-    color: darkslateblue;
-}
-
-h3{
-    font-size: 20px;
-    padding: 2%;
-    margin: 20px 0 10px;
-    color: black;
-    border-radius: 20px;
-    box-shadow: 0 0 15px rgb(72, 47, 107);
-    margin-top: 5%;
-    margin-bottom: 5%;
-    border-bottom: 5px solid gainsboro;
-}
-
-ul{
-    list-style-type: square;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Arial', sans-serif;
+    background-color:beige;
+    margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+  .container {
+    position: relative;
+    display: flex;
+    background:#fff;
+    width: 100%;
+    margin: 50px;
+    max-width: 1000px;
+    min-height: 1000px;
+    grid-template-columns: 1fr 2fr;   
+    display: grid;
+    box-shadow:0 35px 55px rgba(0,0,0,0.1);
+
+}
+
+
+
+/* Left Section Styling */
+.left_Side {
+    position: relative;
+    background-color: #003147;
+    padding: 40px;
+}
+
+
+
+.profileText {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+   
+}
+
+.profileText .imgBx {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+
+}
+
+.profileText .imgBx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.profileText h2 {
+    color: #fff;
+    font-size: 1.5em;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.4em;
+}
+.profileText h2 span {
+    font-size: 0.8em;
+    font-weight: 300;
+}
+
+.contactInfo {
+    padding-top: 40px;
+}
+
+.title {
+
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    
+}
+
+.contactInfo ul {
+    position: relative;
+
+}
+
+.contactInfo ul li {
+    position: relative;
+    list-style: none;
     margin: 10px 0;
+    cursor: pointer;
 }
 
-ul li{
-    margin: 10px 25px;
+.contactInfo ul li .icon {
+    display: inline-block;
+    width: 30px;
+    font-size: 18px;
+    color: #03a9f4;
+
 }
 
-.section-2{
-width: 60%;
-padding: 30px;
-box-sizing: border-box;
+.contactInfo ul li span {
+    color: #fff;
+    font-weight: 300;
 }
 
-p{
-    font-size: 22px;
-    font-family: Arial, Helvetica, sans-serif;
+.contactInfo.education li {
+     margin-bottom: 15px;
 }
 
-button{
+.contactInfo.education h5 {
+    color: #03a9f4;
+    font-weight: 500;
+}
+
+.contactInfo.education h4 {
+    color: #fff;
+    font-weight: 500;
+}
+  
+.contactInfo.language .percent {
+    position: relative;
+    width: 100%;
+    height: 6px;
+    background: #081921;
+    display: block;
+    margin-top: 5px;
+} 
+
+.contactInfo.language .percent div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: #03a9f4;
+}
+
+
+/*Right Section Styling */
+.right_Side {
+    position: relative;
+    background: #fff;
+    padding: 40px;
+}
+
+
+.about {
+    margin-bottom: 50px;
+
+}
+
+.about:last-child {
+    margin-bottom: 0;
+}
+
+.title2 {
+    color: #003147;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+
+}
+
+p {
+    color: #333;
+
+}
+
+.about.box
+  {
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0;
+  }
+
+  .about.box .text  p {
+    text-transform: uppercase;
+    color: #2a7da2;
+    font-size:  16px;
+  }
+
+  .skills .box {
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    justify-content: center;
+    align-items: center;
+    
+  }
+
+  .skills .box h4 {
+    text-transform: uppercase;
+    color: #848c99;
+    font-weight: 500;
+  }
+
+  .skills .box .percent {
+    position: relative;
+    width: 100%;
+    height: 10px;
+    background: #f0f0f0;
+  }
+
+  .skills .box .percent div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: #03a9f4;
+  }
+
+   .interest ul {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+   }
+
+ 
+  .interest ul li{
+    list-style: none;
+    color: #333;
+    font-weight: 500;
+    margin: 10px 0;
+  }
+
+  .interest ul li .fa {
+    color: #03a9f4;
+    font-size: 18px;
+    width: 20px;
+  }
+
+  button {
     font-family:'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: Arial, sans-serif;
     border-radius: 20px;
-    box-shadow: 0 0 15px blue;
+    box-shadow: 0 0 15px black;
     cursor: pointer;
     margin-top: 10px;
-    font-size: 20px;
+    font-size: 18px;
 }
 
-button:hover{
-    background-color: blue;
-    color: lightseagreen;
+button:hover {
+    background-color: #73e3ff;
 }
 
-/* Responsive Adjustments*/
-@media screen and (max-width: 768px){
-    .resume-container{
-        flex-direction: column;
+  @media (max-width: 1000px)
+
+  {
+    .container {
+        margin: 10px;
+        grid-template-columns: repeat(1,1fr);
     }
 
-    .section-1{
-        width: 100%;
-        border-right: none;
-        
-    }
+    .interest ul {
+        grid-template-columns: repeat(2,1fr)
+      }
+  }
 
-    .section-2{
-       width: 100%;
-       
-    }
-}
+  
+
+
+  @media (max-width: 600px)
+  {
+
+    .interest ul {
+        grid-template-columns: repeat(1,1fr)
+      }
+
+      .skills .box {
+        grid-template-columns: repeat(1, 1fr);
+      }
+
+  }
+
